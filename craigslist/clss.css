@@ -143,49 +143,4 @@
 	}
 
 
-	/* on second thought, dont show TSB until we can fix any display or usability bugs */
-	aside.tsb {
-		display:none;
-	}
-	/*
-	aside.tsb {
-	  width: auto;
-	  margin:10px 10px 0 10px;
-	}
-	  
-	aside.tsb ul {
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	}
-	 
-	aside.tsb li {
-	  font: 100 16px/1 Helvetica, Verdana, sans-serif;
-	  border-bottom: 1px solid #ccc;
-	}
-	aside.tsb li:first-child {
-	  border-top: 1px solid #ccc;
-	}
-	 
-	aside.tsb li a {
-	  text-decoration: none;
-	  color: #000;
-	  display: block;
-	  padding:5px;
-	  text-align:center;
-	 
-	  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  transition: font-size 0.3s ease, background-color 0.3s ease;
-	}
-	 
-	aside.tsb li a:hover {
-	  font-size: 20px;
-	  background: #f6f6f6;
-	}
-	*/
-
-
 
