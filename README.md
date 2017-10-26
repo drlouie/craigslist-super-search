@@ -4,7 +4,15 @@ Craigslist SuperSearch(CLSS) is a Craigslist multi-location and full-state searc
 
 Created by Luis G. Rodriguez (louie - drlouie - doctorlouie - louierd), in 2010, it hasn't quite been updated much at all since it was originally written, however its been highly instrumental in my marketing and market researching, as well as a nifty tool for quickly searching large swaths of areas for specific items I am seeking to purchase. Feel free to help build it into something much more effective and efficient. I've just gotten used to it as it sits, however I'd love to see it progress immensely.
 
+Perl Module Dependencies:
+LWP::Simple
+CGI
+CGI::Carp
+HTML::SimpleLinkExtor
+HTML::TokeParser
+HTML::ResolveLink
+Text::Autoformat
+
 ## License
 
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
-
