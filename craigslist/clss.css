@@ -1,0 +1,191 @@
+	body {
+		font-size:0.90em;
+		line-height:1.2em;
+		overflow-x:hidden;
+		overflow-y:auto;
+		font-family: tahoma, arial, helvetica, verdana;
+		background:#F7F7F7 url(./electrostatic.png) 0 0 repeat;
+	}
+	font { font-size:9px; color:#D1D1D1;}
+	a { color:#266899; }
+
+	label { color:inherit; cursor:pointer; }
+	label:hover { color:#266899; cursor:pointer; }
+
+
+	/* START DISPLAY:NONE DECLARATION */
+	/* NOT SURE! */
+	#sortByDiv, .contents, #ef, .loadposting, .sortby, .resultshdr, #footer, #messagetable, #fmtsel li, span.p, .searchbox, table
+
+	/* h4.ban = main date */
+	,h4.ban
+
+	/* loading animation */
+	, #floater
+
+	/* sEx = selfExplanatory */
+	,header, footer, hr
+
+	/* press to search craigslist */
+	,.querybox
+
+	/* search type: list/thumb/gallery/map */
+	,.search-legend
+
+	/* SINCE CONTAINER IS .search-legend, previous declaration, REMOVED: */
+	/* ,#listview, #picview, #gridview, #mapview */
+
+	/* newest relevant */
+	,.search-sort
+
+	/* parent ID: sortable-results */
+	,.favlistinfo, .banishlistinfo
+
+	/* favorited/no longer favorited & hidden/no longer hidden */
+	,.slidemessage
+
+	/*!!! ADDED 2013 !!!*/
+	/* as ID implies */
+	, #mapcontainer
+	/*- NOT SURE! -*/
+	,span.tocsort, .catfilterbox
+
+
+	/* favorite/hide this post links */
+	,.screen-reader-text
+
+	/* options: close */
+	,.search-options-header.linklike
+
+	/* search form and other original document elements */
+	,.searchgroup
+
+	/*!!! ADDED 2016 !!!*/
+	/* banish/unbanish: hide/restore this posting */
+	,.unbanish, .banish, .restore-link
+
+	/* pic/map post list item link */
+	, .result-tags
+
+	/*!!! ADDED 2017 !!!*/
+	/* 'Try also' */
+	, .searchHints
+
+	/* 'displaying ... postings' */
+	, .for-map
+
+	/* 'see in map view' */
+	, .open-map-view-button
+
+	/* linked price */
+	, a span.result-price
+
+	{
+		display:none;
+	}
+
+	/* END DISPLAY:NONE DECLARATION */
+
+
+	fieldset {
+		margin:0;
+		background: #FFFFFF;
+		border: 1px solid #CDCDCD;
+		padding:0;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		padding-bottom:10px;
+	}
+	.itempn font, .itempnr font {
+		color:#333333;
+	}
+	#clChecks {
+		float:left;
+		padding:0 1% 0 1%;
+	}
+	/*works only in fire, will remake*/
+	/*span.date { position:absolute; clear:right; width:28px; left: 3.2em; padding-top:1px; text-align:right; white-space:nowrap; }*/
+	span.date { float:left; left: 3.2em; padding: 1px 5px 0 5px; text-align:right; white-space:nowrap; }
+
+	a.gc { font-size:9px; color: #333333; text-decoration:none; }
+	span.price { padding-left:0px; }
+	.clban { position:inline; left: 30px; width:auto; padding-top:1px; }
+	img.CLimage { border: #266899 1px solid; padding:1px; }
+	#maxAsk, #minAsk { width:100px; }
+
+
+	/* new clearfix */
+	.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+	* html .clearfix             { zoom: 1; } /* IE6 */
+	*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+	a.i {
+		display:none;
+	}
+
+	p.row, 
+	p.result-row,
+	.noresults {
+		margin:10px 20px;
+	}
+	#datesearch {
+		display:none;
+	}
+	#datesearch input {
+		width: 300px;
+		padding: 5px;
+
+	}
+
+	ul.rows {
+		list-style:none;
+	}
+
+
+	/* on second thought, dont show TSB until we can fix any display or usability bugs */
+	aside.tsb {
+		display:none;
+	}
+	/*
+	aside.tsb {
+	  width: auto;
+	  margin:10px 10px 0 10px;
+	}
+	  
+	aside.tsb ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	}
+	 
+	aside.tsb li {
+	  font: 100 16px/1 Helvetica, Verdana, sans-serif;
+	  border-bottom: 1px solid #ccc;
+	}
+	aside.tsb li:first-child {
+	  border-top: 1px solid #ccc;
+	}
+	 
+	aside.tsb li a {
+	  text-decoration: none;
+	  color: #000;
+	  display: block;
+	  padding:5px;
+	  text-align:center;
+	 
+	  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	  transition: font-size 0.3s ease, background-color 0.3s ease;
+	}
+	 
+	aside.tsb li a:hover {
+	  font-size: 20px;
+	  background: #f6f6f6;
+	}
+	*/
+
+
+
