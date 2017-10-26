@@ -5,9 +5,6 @@
 		else if (state == 'flag'){hDs = 2;}
 		else{hDs = 0;}
 		IveSeenPID='';
-		//-> pre-2016
-		//-> $('p.row').each(function(){
-		//-> post-2016
 		$('li.result-row').each(function(){
 			var cA=$(this);var MyPID=''+cA.attr('data-pid')+'';
 			if(MyPID!=''&&IveSeenPID.indexOf(':'+cA.attr('data-pid')+':')==-1){IveSeenPID+=':'+cA.attr('data-pid')+':';}
@@ -130,7 +127,6 @@
 						}
 					});
 
-					//alert(TheMonths[AllDatesCombined[i].getMonth()].substring(0,3) + ' ' + AllDatesCombined[i].getDate());
 					$('p[rel]').each(function(){
 						if ($(this).attr('rel') == TheMonths[AllDatesCombined[i].getMonth()].substring(0,3) + ' ' + AllDatesCombined[i].getDate()) {
 							//alert(TheMonths[AllDatesCombined[i].getMonth()].substring(0,3) + ' ' + AllDatesCombined[i].getDate());
@@ -140,7 +136,6 @@
 					});
 				}
 			}
-			//alert($(this).parent().html());
 		});
 	};
 	var SortDatesAscending = function (d1, d2) {
@@ -154,25 +149,16 @@
 	  return 0;
 	};
 	var CLoad=function(){
-		/*nolonger*/
-		/*X1*/
-		//ToggleDuplicates();
 		DefineDateRange();
-		//-> pre-2016
-		//-> jQuery('.row a').each(function(){
-		//-> post-2016
 		jQuery('.result-row a').each(function(){
 			if(jQuery(this).attr('target') || !jQuery(this).attr('target')){
 				jQuery(this).attr('target','Craigslist');
 			}
 		});
-		//alert(IveSeenPID);
 		$('h4.ban').each(function(){
-			/*X2*/
 			if($(this).attr('class')!='ban'){
 				$(this).html('');
 			}
-			/*X3*/
 			$(this).css('position','inline').css('left','-10px').css('display','block');
 		});
 		$('.button.next').each(function(){
@@ -191,9 +177,6 @@
 		jQuery("#datesearch").show();
 		jQuery("#datesearch input").keyup(function(e){
 			if (e.keyCode == 13) {
-				//-> pre-2016
-				//-> jQuery('p[class="row"]').each(function(){
-				//-> post-2016
 				jQuery('li[class="result-row"]').each(function(){
 					var SearchContents = jQuery(this).html().toString();
 					var SearchString = jQuery("#datesearch input").val();
@@ -207,12 +190,6 @@
 			}
 		});	
 		
-		/* force Craigslist saftey/prohibited/recalls/scams open up in Craigslist window/tab */
-		/* on second thought, dont show TSB until we can fix any display or usability bugs */
-		/* jQuery("aside.tsb a").each(function(){
-			jQuery(this).attr('target','Craigslist');
-		});
-		*/
 	};
 
 	var CreatePaginationLink = function(that){
@@ -237,9 +214,6 @@
 				if($(this).attr('data-ids')){
 					if(!($(this).attr('data-ids').indexOf('1:')!=-1)){myImage=noImage;}
 					else{
-						/* was */
-						/* myImage='<img align="left" src="http://images.craigslist.org/thumb/'+$(this).attr('data-ids')+'" class="CLimage">'; */
-						/* now */
 						trueImage = $(this).attr('data-ids').split('1:');
 						myImage='<img align="left" src="//images.craigslist.org/'+trueImage[1].replace(',','')+'_50x50c.jpg" class="CLimage">';
 					}
