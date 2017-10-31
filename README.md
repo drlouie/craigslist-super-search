@@ -1,7 +1,7 @@
 # craigslist-super-search
 
-[Craigslist SuperSearch](https://github.com/drlouie/craigslist-super-search)
-[Use It Online, Create an Account](https://myvirtualprivate.com/craigslist)
+* [Craigslist SuperSearch](https://github.com/drlouie/craigslist-super-search)
+* [Use It Online, Create an Account](https://myvirtualprivate.com/craigslist)
 
 Craigslist SuperSearch(CLSS) is a Craigslist multi-location and full-state search program written in Perl, tested on UNIX FreeBSD 8.2, FreeBSD 11, WAMP, LAMP and other UNIX and Linux servers, virtual, hosted, local and otherwise.
 
