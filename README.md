@@ -12,7 +12,7 @@ Upload to web server, local or otherwise. Move to web-root directory and extract
 
 * tar -xf craigslist.tar
 
-Then simply run your favorite browser to use Craigslist SuperSearch directly from on your web server. Please make certain to report any bugs or updates back to me, or by all means, contribute back to this project at your leisure.
+Then simply run your favorite browser to use Craigslist SuperSearch directly from your web server. Please make certain to report any bugs or updates back to me. And, by all means, contribute back to this project at your leisure.
 
 ### Perl Module Dependencies
 * LWP::Simple
